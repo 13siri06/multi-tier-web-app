@@ -25,7 +25,7 @@ Client Browser->Nginx Container->Backend API Container->Local JSON Storage
 
 ## Docker Containers
 
-![Docker Containers](screenshots/docker-ps.png)
+![Docker Containers](screenshots/docker-desktop-running.png)
 
 ---
 

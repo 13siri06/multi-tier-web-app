@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Tier Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Multi-Tier Web Application</h1>
+    <p>Client | Nginx | Backend API | JSON Storage</p>
+
+    <button onclick="getData()">Fetch Backend Data</button>
+
+    <h2 id="output">Ready to fetch backend data </h2>
+  </div>
+
+  <script>
+    function getData() {
+      fetch("/api/data")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("output").innerText =
+            data.message + " | Visits: " + data.visits;
+        })
+        .catch(() => {
+          document.getElementById("output").innerText = "Backend not connected";
+        });
+    }
+  </script>
+</body>
+</html>

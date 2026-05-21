@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #dbeafe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  width: 550px;
+  padding: 45px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+
+h1 {
+  font-size: 48px;
+  color: #14213d;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  color: #4b5563;
+  margin-bottom: 35px;
+}
+
+button {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  font-size: 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(124, 58, 237, 0.35);
+}
+
+#output {
+  margin-top: 35px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.card::before {
+  width: 140px;
+  height: 140px;
+  top: -40px;
+  left: -40px;
+}
+
+.card::after {
+  width: 100px;
+  height: 100px;
+  bottom: -30px;
+  right: -30px;
+}
